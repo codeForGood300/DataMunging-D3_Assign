@@ -15,7 +15,7 @@ logger1.write('[');
 logger1.write('\n');
 logger1.write('\n');
 
-
+//asian country list
 const list = ['Afghanistan', 'Armenia', 'Azerbaijan', 'Bahrain', 'Bangladesh', 'Bhutan', 'Brunei', 'Cambodia', 'China', 'Cyprus',
   'Georgia', 'India', 'Indonesia', 'Iran', 'Iraq', 'Israel', 'Japan', 'Jordan', 'Kazakhstan', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Lebanon',
   'Malaysia', 'Maldives', 'Mongolia', 'Myanmar', 'Nepal', 'North Korea', 'Oman', 'Pakistan', 'Palestine', 'Philippines', 'Qatar',
@@ -35,7 +35,7 @@ var c1 = 0;
 
 rl.on('line', (line) => {
   const y = line.split(',');
-
+//added year as key&& %population as value
   if (y[0] === 'India' && (y[2] === 'Urban population (% of total)')) {
     a[y[4]] = [y[5]];
     // console.log(y[5]);
@@ -47,7 +47,7 @@ rl.on('line', (line) => {
     // console.log(y[5]);
   }
 
-
+//added country as key&& population as value
   if ((mp[y[0]] === 1) && (y[2] === 'Urban population' || y[2] === 'Rural population')) {
     if (mp1[y[0]]) {
       mp1[y[0]] += parseInt(y[5], 10);
