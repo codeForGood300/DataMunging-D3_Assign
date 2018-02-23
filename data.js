@@ -37,8 +37,6 @@ rl.on('line', (line) => {
   const y = line.split(',');
 
   if (y[0] === 'India' && (y[2] === 'Urban population (% of total)')) {
-   
-
     a[y[4]] = [y[5]];
     // console.log(y[5]);
   }
