@@ -1,0 +1,31 @@
+{
+  "name": "data_assign",
+  "version": "1.0.0",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint data.js",
+    "generate": "node data.js",
+    "start": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Download the **Indicators.tar** file and extract **Indicators.csv** from it, paste it inside the csvtojson folder using:-",
+  "dependencies": {
+    "eslint": "^4.18.1",
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshvardhan786/DataMunging-D3_Assign.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harshvardhan786/DataMunging-D3_Assign/issues"
+  },
+  "homepage": "https://github.com/harshvardhan786/DataMunging-D3_Assign#readme"
+}
